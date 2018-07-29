@@ -1,4 +1,4 @@
-def FAILURE_EMAIL_RECIPIENTS = "***REMOVED***"
+def FAILURE_EMAIL_RECIPIENTS = "test-address@example.com"
 def apiURL = "https://status.github.com/api/last-message.json"
 
 // Maximum time for the whole curl operation to take before failing (seconds).
