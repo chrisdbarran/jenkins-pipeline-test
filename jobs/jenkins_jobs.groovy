@@ -12,11 +12,11 @@ pipelineJob('jenkins-test-pipeline1') {
      }
 }
 
-pipelinieJob('jenkins-github-status') {
+pipelineJob('jenkins-github-status') {
     description('Test the status of The Github')
-    triggers( {
+    triggers {
            cron('H/59 * * * *')
-    })
+    }
     logRotator(5,5)
     definition {
         cps { 
