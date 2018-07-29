@@ -29,6 +29,6 @@ def validateStatus(message){
     def jsonSlurper = new groovy.json.JsonSlurper()
     def json = jsonSlurper.parseText(message)
     echo ("GitHub Status: ${json.status} - ${json.body}")
-    assert json.status == "bad"
+    assert json.status == "good"
 }
 
